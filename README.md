@@ -77,6 +77,10 @@ I hold an MS in Computer Science from UC Berkeley and a BS from Arizona State Un
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Elasticsearch](https://img.shields.io/badge/Elasticsearch-005571?style=for-the-badge&logo=elasticsearch&logoColor=white)
 
+## 🚀 Projects
+
+- **[Data Structures & Algorithms in Python](https://github.com/pragathigopal7/pragathigopal7/tree/main/dsa)**: tested, standard-library-only implementations of core data structures (heap, BST, trie, LRU cache, union-find) and algorithms (sorting, searching, graphs, dynamic programming), with a complexity cheat sheet.
+
 ## 📈 GitHub Stats
 
 <p align="left">
