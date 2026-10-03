@@ -7,7 +7,7 @@
 
 ## About Me
 
-I am a Senior Software Engineer with 7+ years of experience building scalable, low-latency backend systems system architecture, database design, microservices, and the API and data-orchestration layers that connect them. My work spans high-throughput event pipelines (Kafka), caching and real-time data delivery (Redis, gRPC, WebSockets), and cloud infrastructure on AWS and Azure, with a strong focus on designing services that stay fast and correct under heavy, continuously updating data loads.
+I am a Senior Software Engineer with 7+ years of experience building scalable, backend systems system architecture, database design, microservices, and the API and data-orchestration layers that connect them. My work spans high-throughput event pipelines (Kafka), caching and real-time data delivery (Redis, gRPC, WebSockets), and cloud infrastructure on AWS and Azure, with a strong focus on designing services that stay fast and correct under heavy, continuously updating data loads.
 
 At Walmart Global Tech I worked on the Walmart+ membership benefits platform, including the partner integrations with Peacock and Paramount+, orchestrating internal APIs on high traffic systems where reliability, security, and data integrity were non negotiable. More recently, as an AI Trainer at LinkedIn on Project Nectarine, I worked hands-on with large language models, which pulled my backend experience toward the AI side of the stack: LLM integration, function calling and tool use, and AI-augmented development workflows. I'm especially interested in how patterns like the Model Context Protocol (MCP) let AI agents connect safely to enterprise data and automate real business workflows.
 
