@@ -79,6 +79,7 @@ I hold an MS in Computer Science from UC Berkeley and a BS from Arizona State Un
 
 ## 🚀 Projects
 
+- **[orders-api](https://github.com/pragathigopal7/orders-api)**: Go REST service on PostgreSQL for catalog, inventory and orders, built to stay correct under concurrency: idempotent order placement that survives simultaneous retries, deadlock free stock reservation that never oversells, and a transactional outbox that delivers events in order. Integration tested against real Postgres, with an OpenAPI 3.1 spec, Docker and Kubernetes manifests.
 - **[Data Structures & Algorithms in Python](https://github.com/pragathigopal7/pragathigopal7/tree/main/dsa)**: tested, standard-library-only implementations of core data structures (heap, BST, trie, LRU cache, union-find) and algorithms (sorting, searching, graphs, dynamic programming), with a complexity cheat sheet.
 
 ## 📈 GitHub Stats
