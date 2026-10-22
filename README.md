@@ -7,11 +7,11 @@
 
 ## About Me
 
-I am a Senior Software Engineer with 7+ years of experience building scalable, backend systems system architecture, database design, microservices, and the API and data-orchestration layers that connect them. My work spans high-throughput event pipelines (Kafka), caching and real-time data delivery (Redis, gRPC, WebSockets), and cloud infrastructure on AWS and Azure, with a strong focus on designing services that stay fast and correct under heavy, continuously updating data loads.
+I am a Senior Software Engineer with 7+ years of experience building scalable backend systems: system architecture, database design, microservices, and the API and data-orchestration layers that connect them. My work spans high-throughput event pipelines (Kafka), caching and real-time data delivery (Redis, gRPC, WebSockets), and cloud infrastructure on AWS and Azure, with a strong focus on designing services that stay fast and correct under heavy, continuously updating data loads.
 
-At Walmart Global Tech I worked on the Walmart+ membership benefits platform, including the partner integrations with Peacock and Paramount+, orchestrating internal APIs on high traffic systems where reliability, security, and data integrity were non negotiable. More recently, as an AI Trainer at LinkedIn on Project Nectarine, I worked hands-on with large language models, which pulled my backend experience toward the AI side of the stack: LLM integration, function calling and tool use, and AI-augmented development workflows. I'm especially interested in how patterns like the Model Context Protocol (MCP) let AI agents connect safely to enterprise data and automate real business workflows.
+At Walmart Global Tech I worked on the Walmart+ membership benefits platform, including the partner integrations with Peacock and Paramount+, orchestrating internal APIs on high traffic systems where reliability, security, and data integrity were non-negotiable. More recently, as an AI Trainer at LinkedIn on Project Nectarine, I worked hands-on with large language models, which pulled my backend experience toward the AI side of the stack: LLM integration, function calling and tool use, and AI-augmented development workflows. I'm especially interested in how patterns like the Model Context Protocol (MCP) let AI agents connect safely to enterprise data and automate real business workflows.
 
-I hold an MS in Computer Science from UC Berkeley and a BS from Arizona State University, where I did NSF-funded research applying machine learning to multimodal sensor data. My core toolkit is Python, Java/Spring Boot, and Go, alongside Kubernetes, Kafka, and SQL/NoSQL data stores and I treat data, APIs, and interfaces as one cohesive product, from schema design through to the dashboard that renders it.
+I hold an MS in Computer Science from UC Berkeley and a BS from Arizona State University, where I did NSF-funded research applying machine learning to multimodal sensor data. My core toolkit is Python, Java/Spring Boot, and Go, alongside Kubernetes, Kafka, and SQL/NoSQL data stores, and I treat data, APIs, and interfaces as one cohesive product, from schema design through to the dashboard that renders it.
 
 ## 🐍 Backend & APIs
 
@@ -80,6 +80,7 @@ I hold an MS in Computer Science from UC Berkeley and a BS from Arizona State Un
 ## 🚀 Projects
 
 - **[orders-api](https://github.com/pragathigopal7/orders-api)**: Go REST service on PostgreSQL for catalog, inventory and orders, built to stay correct under concurrency: idempotent order placement that survives simultaneous retries, deadlock free stock reservation that never oversells, and a transactional outbox that delivers events in order. Integration tested against real Postgres, with an OpenAPI 3.1 spec, Docker and Kubernetes manifests.
+- **[llm-eval-harness](https://github.com/pragathigopal7/llm-eval-harness)**: dependency-free Python harness for evaluating LLM systems. Scores answers with reference metrics and LLM-as-judge, reports pass rates with Wilson confidence intervals plus latency, token and cost metrics, and gates CI on regressions against a saved baseline. Works with the Anthropic API, any OpenAI-compatible server, or an offline mock.
 - **[Data Structures & Algorithms in Python](https://github.com/pragathigopal7/pragathigopal7/tree/main/dsa)**: tested, standard-library-only implementations of core data structures (heap, BST, trie, LRU cache, union-find) and algorithms (sorting, searching, graphs, dynamic programming), with a complexity cheat sheet.
 
 ## 📈 GitHub Stats
@@ -91,5 +92,6 @@ I hold an MS in Computer Science from UC Berkeley and a BS from Arizona State Un
 
 ## ☎️ Contact me
 
+[![Website](https://img.shields.io/badge/pragathigopal.com-14213D?style=for-the-badge&logo=googlechrome&logoColor=white)](https://pragathigopal.com)
 [![LinkedIn](https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/prag-gopal)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:pragu.gopal@gmail.com?subject=From%20your%20GitHub%20Profile)
