@@ -34,6 +34,9 @@ I hold an MS in Computer Science from UC Berkeley and a BS from Arizona State Un
 ![Prompt Engineering](https://img.shields.io/badge/Prompt_Engineering-0EA5E9?style=for-the-badge)
 ![OpenAI API](https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white)
 ![Anthropic API](https://img.shields.io/badge/Anthropic_API-191919?style=for-the-badge)
+![Amazon Bedrock](https://img.shields.io/badge/Amazon_Bedrock-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)
+![RAG](https://img.shields.io/badge/RAG-FF6F00?style=for-the-badge)
+![LLM Evaluation](https://img.shields.io/badge/LLM_Evaluation-7C3AED?style=for-the-badge)
 ![GitHub Copilot](https://img.shields.io/badge/GitHub_Copilot-000000?style=for-the-badge&logo=githubcopilot&logoColor=white)
 ![AI-Augmented Development](https://img.shields.io/badge/AI--Augmented_Development-10B981?style=for-the-badge)
 
@@ -44,6 +47,8 @@ I hold an MS in Computer Science from UC Berkeley and a BS from Arizona State Un
 ![gRPC](https://img.shields.io/badge/gRPC-244C5A?style=for-the-badge&logo=grpc&logoColor=white)
 ![WebSockets](https://img.shields.io/badge/WebSockets-010101?style=for-the-badge&logo=socketdotio&logoColor=white)
 ![Event_Driven_Architecture](https://img.shields.io/badge/Event_Driven_Architecture-4B8BBE?style=for-the-badge)
+![Redpanda](https://img.shields.io/badge/Redpanda-E2401B?style=for-the-badge)
+![Data Quality](https://img.shields.io/badge/Data_Quality_Gates-2E7D32?style=for-the-badge)
 
 ## 🖥️ Frontend
 
@@ -76,10 +81,14 @@ I hold an MS in Computer Science from UC Berkeley and a BS from Arizona State Un
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Elasticsearch](https://img.shields.io/badge/Elasticsearch-005571?style=for-the-badge&logo=elasticsearch&logoColor=white)
+![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=for-the-badge&logo=duckdb&logoColor=black)
+![Apache Parquet](https://img.shields.io/badge/Apache_Parquet-50ABF1?style=for-the-badge)
 
 ## 🚀 Projects
 
 - **[orders-api](https://github.com/pragathigopal7/orders-api)**: Go REST service on PostgreSQL for catalog, inventory and orders, built to stay correct under concurrency: idempotent order placement that survives simultaneous retries, deadlock free stock reservation that never oversells, and a transactional outbox that delivers events in order. Integration tested against real Postgres, with an OpenAPI 3.1 spec, Docker and Kubernetes manifests.
+- **[retail-data-pipeline](https://github.com/pragathigopal7/retail-data-pipeline)**: streaming retail orders pipeline that consumes order events from Kafka (Redpanda), enforces a Pydantic schema contract at ingest, and builds a bronze, silver and gold lakehouse on Parquet and DuckDB. Handles duplicate deliveries, late and out-of-order events by event time, and malformed payloads routed to a dead-letter queue, with checkpointed offsets for crash recovery and SQL data quality gates that fail the run before bad data reaches analytics.
+- **[Codebase Q&A agent on Amazon Bedrock AgentCore](https://github.com/pragathigopal7/Bedrock)**: proof-of-concept agent built with the Strands Agents SDK that answers questions about a Java Spring Boot codebase, cites `file:line` ranges for every claim, and refuses to guess when the code lacks the answer. Includes a local web demo (offline, Ollama, or Bedrock) and a golden-set evaluation; tuning chunking raised retrieval MRR from 0.88 to 0.95 at 100% recall@3.
 - **[llm-eval-harness](https://github.com/pragathigopal7/llm-eval-harness)**: dependency-free Python harness for evaluating LLM systems. Scores answers with reference metrics and LLM-as-judge, reports pass rates with Wilson confidence intervals plus latency, token and cost metrics, and gates CI on regressions against a saved baseline. Works with the Anthropic API, any OpenAI-compatible server, or an offline mock.
 - **[Data Structures & Algorithms in Python](https://github.com/pragathigopal7/pragathigopal7/tree/main/dsa)**: tested, standard-library-only implementations of core data structures (heap, BST, trie, LRU cache, union-find) and algorithms (sorting, searching, graphs, dynamic programming), with a complexity cheat sheet.
 
