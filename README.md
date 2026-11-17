@@ -65,6 +65,11 @@ I hold an MS in Computer Science from UC Berkeley and a BS from Arizona State Un
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
 ![CI/CD](https://img.shields.io/badge/CI%2FCD-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![Amazon EKS](https://img.shields.io/badge/Amazon_EKS-FF9900?style=for-the-badge&logo=amazoneks&logoColor=white)
+![Pulumi](https://img.shields.io/badge/Pulumi-8A3391?style=for-the-badge&logo=pulumi&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
+![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-000000?style=for-the-badge&logo=opentelemetry&logoColor=white)
 
 ## 📚 Core Concepts
 
@@ -86,6 +91,7 @@ I hold an MS in Computer Science from UC Berkeley and a BS from Arizona State Un
 
 ## 🚀 Projects
 
+- **[paved-road](https://github.com/pragathigopal7/paved-road)**: observable by default internal developer platform on AWS EKS. Terraform modules build the VPC, a private EKS cluster and keyless GitHub OIDC deploy roles with S3 native state locking, and a Pulumi (Python) layer onboards teams with restricted namespaces, quotas, ECR repositories and autoscaling GitHub Actions runner scale sets on spot nodes. A Python CLI scaffolds Kafka services with JSON logs, Prometheus metrics, OpenTelemetry traces and a hardened security context built in, enforces 17 policy rules in CI as PR annotations and SARIF, right sizes workloads with the monthly cost impact, and serves a runbook for every alert; an MCP server exposes the same tools to AI assistants. Terraform, Pulumi and the SLO burn rate alerts are all unit tested offline.
 - **[orders-api](https://github.com/pragathigopal7/orders-api)**: Go REST service on PostgreSQL for catalog, inventory and orders, built to stay correct under concurrency: idempotent order placement that survives simultaneous retries, deadlock free stock reservation that never oversells, and a transactional outbox that delivers events in order. Integration tested against real Postgres, with an OpenAPI 3.1 spec, Docker and Kubernetes manifests.
 - **[retail-data-pipeline](https://github.com/pragathigopal7/retail-data-pipeline)**: streaming retail orders pipeline that consumes order events from Kafka (Redpanda), enforces a Pydantic schema contract at ingest, and builds a bronze, silver and gold lakehouse on Parquet and DuckDB. Handles duplicate deliveries, late and out-of-order events by event time, and malformed payloads routed to a dead-letter queue, with checkpointed offsets for crash recovery and SQL data quality gates that fail the run before bad data reaches analytics.
 - **[Codebase Q&A agent on Amazon Bedrock AgentCore](https://github.com/pragathigopal7/Bedrock)**: proof-of-concept agent built with the Strands Agents SDK that answers questions about a Java Spring Boot codebase, cites `file:line` ranges for every claim, and refuses to guess when the code lacks the answer. Includes a local web demo (offline, Ollama, or Bedrock) and a golden-set evaluation; tuning chunking raised retrieval MRR from 0.88 to 0.95 at 100% recall@3.
